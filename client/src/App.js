@@ -2,9 +2,9 @@ import "./App.css";
 import { useState, useEffect } from "react";
 
 function url(path) {
-  return (process.env.NODE_ENV = "development"
+  return process.env.NODE_ENV === "development"
     ? `http://localhost:1234${path}`
-    : path);
+    : path;
 }
 
 function App() {
